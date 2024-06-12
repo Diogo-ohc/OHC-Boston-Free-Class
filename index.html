@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffbc40;
+            background-color: #f49567;
             margin: 0;
             padding: 20px; /* Added padding */
             display: flex;
@@ -66,16 +66,21 @@
             margin-bottom: 20px;
         }
         .header-images img {
-            width: 100px;
             height: auto;
+        }
+        .header-images .left-logo {
+            width: 150px; /* Increased width for top left logo */
+        }
+        .header-images .right-logo {
+            width: 100px; /* Standard width for top right logo */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header-images">
-            <img src="https://world2go.ie/wp-content/webp-express/webp-images/uploads/2022/10/ohc-logo.jpg.webp" alt="Top left image">
-            <img src="https://www.ohcenglish.com/tim.php?src=uploads/images/2020/07/22-boston3.png&w=600&h=600&q=100&zc=1" alt="Top right image">
+            <img src="https://world2go.ie/wp-content/webp-express/webp-images/uploads/2022/10/ohc-logo.jpg.webp" alt="Top left image" class="left-logo">
+            <img src="https://www.ohcenglish.com/tim.php?src=uploads/images/2020/07/22-boston3.png&w=600&h=600&q=100&zc=1" alt="Top right image" class="right-logo">
         </div>
         <h1>Take a Free English Class</h1>
         <p>We are happy to help you improve your English skills at OHC!</p>
