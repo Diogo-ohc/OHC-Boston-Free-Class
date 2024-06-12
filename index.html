@@ -9,10 +9,10 @@
             font-family: Arial, sans-serif;
             background-color: #f49567;
             margin: 0;
-            padding: 20px; /* Added padding */
+            padding: 20px;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Changed to flex-start to align items at the start */
+            align-items: flex-start;
             min-height: 100vh;
         }
         .container {
@@ -24,7 +24,7 @@
             border-radius: 15px;
             position: relative;
             box-sizing: border-box;
-            margin-top: 20px; /* Added margin-top */
+            margin-top: 20px;
         }
         h1 {
             text-align: center;
@@ -66,11 +66,13 @@
             margin-bottom: 20px;
         }
         .header-images .left-logo {
-            width: 200px; /* Increased width for top left logo */
-            height: auto; /* Maintain proportions */
+            width: 800px;
+            height: 200px;
+            object-fit: none;
+            object-position: center -300px; /* Adjust to display the desired part of the image */
         }
         .header-images .right-logo {
-            width: 100px; /* Standard width for top right logo */
+            width: 100px;
             height: auto;
         }
     </style>
@@ -78,8 +80,8 @@
 <body>
     <div class="container">
         <div class="header-images">
-            <img src="https://world2go.ie/wp-content/webp-express/webp-images/uploads/2022/10/ohc-logo.jpg.webp" alt="Top left image" class="left-logo">
-            <img src="https://www.ohcenglish.com/tim.php?src=uploads/images/2020/07/22-boston3.png&w=600&h=600&q=100&zc=1" alt="Top right image" class="right-logo">
+            <img src="images/left-logo.jpg" alt="Top left image" class="left-logo">
+            <img src="images/right-logo.png" alt="Top right image" class="right-logo">
         </div>
         <h1>Take a Free English Class</h1>
         <p>We are happy to help you improve your English skills at OHC!</p>
