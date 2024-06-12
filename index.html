@@ -9,11 +9,11 @@
             font-family: Arial, sans-serif;
             background-color: #ffbc40;
             margin: 0;
-            padding: 0;
+            padding: 20px; /* Added padding */
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* Changed to flex-start to align items at the start */
+            min-height: 100vh;
         }
         .container {
             width: 100%;
@@ -24,6 +24,7 @@
             border-radius: 15px;
             position: relative;
             box-sizing: border-box;
+            margin-top: 20px; /* Added margin-top */
         }
         h1 {
             text-align: center;
@@ -76,8 +77,8 @@
             <img src="https://world2go.ie/wp-content/webp-express/webp-images/uploads/2022/10/ohc-logo.jpg.webp" alt="Top left image">
             <img src="https://www.ohcenglish.com/tim.php?src=uploads/images/2020/07/22-boston3.png&w=600&h=600&q=100&zc=1" alt="Top right image">
         </div>
-        <h1>Help us help you</h1>
-        <p>Fill out the form below to sign up for our free English class. We look forward to helping you improve your English skills!</p>
+        <h1>Take a Free English Class</h1>
+        <p>We look forward to helping you improve your English skills!</p>
         <form action="https://formspree.io/f/mknddrrg" method="POST">
             <!-- Hidden input for redirect URL -->
             <input type="hidden" name="_next" value="https://your-username.github.io/esl-signup/thankyou.html">
