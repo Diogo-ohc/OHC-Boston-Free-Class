@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free ESL Class Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f49567;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            position: relative;
+            box-sizing: border-box;
+            margin-top: 20px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+        }
+        p {
+            text-align: center;
+            color: #666;
+        }
+        form {
+            display: none;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        input, select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .header-images {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .header-images img {
+            width: 100px;
+            height: auto;
+        }
+        .left-logo {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        .left-logo img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: -100px;
+        }
+    </style>
+    <script>
+        function showForm() {
+            document.getElementById('signup-form').style.display = 'flex';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-images">
+            <div class="left-logo">
+                <img src="https://example.com/path-to-your-left-logo.jpg" alt="Top left image">
+            </div>
+            <img src="https://example.com/path-to-your-right-logo.png" alt="Top right image">
+        </div>
+        <h1>Learn English for Free!</h1>
+        <p>Ready to boost your English skills? Let's get started with a free class. Just a few clicks away!</p>
+        <button onclick="showForm()">Learn for free</button>
+        <form id="signup-form" action="https://formspree.io/f/mknddrrg" method="POST">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="class-date">Preferred Class Date:</label>
+            <input type="date" id="class-date" name="class-date" required>
+            
+            <label for="class-time">Preferred Class Time:</label>
+            <select id="class-time" name="class-time" required>
+                <option value="10:00">10:00 AM</option>
+                <option value="10:30">10:30 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="11:30">11:30 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="12:30">12:30 PM</option>
+                <option value="1:00">1:00 PM</option>
+                <option value="1:30">1:30 PM</option>
+                <option value="2:00">2:00 PM</option>
+                <option value="2:30">2:30 PM</option>
+                <option value="3:00">3:00 PM</option>
+                <option value="3:30">3:30 PM</option>
+                <option value="4:00">4:00 PM</option>
+                <option value="4:30">4:30 PM</option>
+                <option value="5:00">5:00 PM</option>
+            </select>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
