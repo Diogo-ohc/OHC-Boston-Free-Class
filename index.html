@@ -7,19 +7,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            background-color: #ffbc40;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             width: 100%;
             max-width: 600px;
-            margin: 50px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            border-radius: 15px;
             position: relative;
+            box-sizing: border-box;
         }
         h1 {
             text-align: center;
@@ -69,11 +73,11 @@
 <body>
     <div class="container">
         <div class="header-images">
-            <img src="https://via.placeholder.com/100" alt="Top left image">
-            <img src="https://via.placeholder.com/100" alt="Top right image">
+            <img src="https://world2go.ie/wp-content/webp-express/webp-images/uploads/2022/10/ohc-logo.jpg.webp" alt="Top left image">
+            <img src="https://www.ohcenglish.com/tim.php?src=uploads/images/2020/07/22-boston3.png&w=600&h=600&q=100&zc=1" alt="Top right image">
         </div>
-        <h1>Take a Free English Class</h1>
-        <p></p>We look forward to helping you improve your English skills!</p>
+        <h1>Help us help you</h1>
+        <p>Fill out the form below to sign up for our free English class. We look forward to helping you improve your English skills!</p>
         <form action="https://formspree.io/f/mknddrrg" method="POST">
             <!-- Hidden input for redirect URL -->
             <input type="hidden" name="_next" value="https://your-username.github.io/esl-signup/thankyou.html">
